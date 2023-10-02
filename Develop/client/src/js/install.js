@@ -38,6 +38,4 @@ butInstall.addEventListener('click', async () => {
 window.addEventListener('appinstalled', (event) => {
   console.log('App installed successfully!', event);
   // You can add logic here for what happens after the app is successfully installed
-  deferredPrompt = null; // Reset the deferredPrompt variable
-  butInstall.style.display = 'none'; // Hide the install button
 });

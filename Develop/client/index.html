@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>J.A.T.E</title>
-    
-      <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
-      </link>
-      <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js">
-      </script>
-      <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js">
-      </script>
-      <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
-      </link>
-  </head>
-  <body>
-    <nav id="navbar">
-      <div class="nav-btn">
-        <a class="btn btn-sm btn-dark" id="buttonInstall" role="button">Install!</a>
-      </div>
-     <h1> Just Another Text Editor</h1>
-     
-      <div class="navbar-brand" >
-        <img src="./assets/icons/icon_96x96.png"/>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.A.T.E</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="navbar-brand">
+      <img src="./assets/icons/icon_96x96.png" alt="App Icon">
+    </div>
+    <h1>Just Another Text Editor</h1>
+    <div class="nav-btn">
+      <button class="btn btn-sm btn-dark" id="buttonInstall" style="display: none;">INSTALL</button>
+    </div>
+  </nav>
+  <main id="main"></main>
 
-    <main id="main">
-      <div class="loading-container">
-        <div class="loading-spinner"></div>
-      </div>
-    </main>
-    
-  </body>
+  <!-- Include JavaScript files at the end of the body tag for better performance -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js"></script>
+
+  <!-- Your custom JavaScript files -->
+  <script type="text/javascript" src="./src/js/install.js"></script>
+  <script type="text/javascript" src="./src/js/database.js"></script>
+  <script type="text/javascript" src="./src/js/editor.js"></script>
+  <script type="text/javascript" src="./src/js/header.js"></script>
+  <script type="text/javascript" src="./src/js/index.js"></script>
+</body>
 </html>
