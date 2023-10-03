@@ -1,0 +1,12 @@
+{
+  "name": "text-edititor",
+  "version": "1.0.0",
+  "description": "J.A.T.E (Just Another Text Editor) is a simple JavaScript text editor that allows users to write and edit text using a user-friendly interface. It provides basic functionalities for text manipulation and editing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
