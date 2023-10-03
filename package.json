@@ -1,25 +1,24 @@
 {
   "name": "JATE",
   "version": "1.0.0",
-  "description": "",
+  "description": "Description of your application",
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
-    "start": "npm run build && npm run server",
+    "start": "npm run build && node server.js",  // Changed the server start command to use node instead of npm
     "server": "cd server && nodemon server.js --ignore client",
     "build": "cd client && npm run build",
     "install": "cd server && npm i && cd ../client && npm i",
     "client": "cd client && npm start"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4"
+    // Add other dependencies your project needs here
   },
-  "devDependencies": {
-    "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
-  }
+  "author": "Your Name",
+  "license": "ISC"
 }
