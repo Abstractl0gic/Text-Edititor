@@ -7,9 +7,7 @@
   },
   "author": "2U",
   "license": "UNLICENSED",
-  "dependencies": {
-    "code-mirror-themes": "^1.0.0",
-    "idb": "^6.1.2",
+  "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/plugin-transform-runtime": "^7.15.0",
@@ -25,5 +23,9 @@
     "webpack-dev-server": "^4.0.0",
     "webpack-pwa-manifest": "^4.3.0",
     "workbox-webpack-plugin": "^6.6.0"
+  },
+  "dependencies": {
+    "code-mirror-themes": "^1.0.0",
+    "idb": "^6.1.2"
   }
 }
